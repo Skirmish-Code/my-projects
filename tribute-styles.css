@@ -1,0 +1,94 @@
+main {
+  font-family: sans-serif;
+}
+
+#main {
+  background-color: #D7EBF1;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+#title-div {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+figure {
+  background-color: white;
+  margin: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#image {
+  max-width: 100%;
+  min-width: 200px;
+  max-height: 800px;
+  width: auto;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.ul-container {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Space between the lists */
+}
+
+ul {
+  list-style-position: outside; /* Position bullets outside */
+  max-width: 600px; /* Set a max width for ul */
+  padding: 0; /* Remove default padding */
+}
+
+ul li {
+  padding-left: 15px; /* Optional padding for list items */
+  margin-bottom: 10px; /* Space between points */
+}
+
+
+figcaption {
+  padding-top: 20px;
+  width: 80%;
+}
+
+a {
+  color: black;
+}
+
+#image, figcaption{
+  display: block;
+  height: auto;
+  margin: auto auto auto auto;
+  align: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#tribute-info {
+  margin: 0px auto;
+}
+
+h3 {
+  text-align: left;
+  padding: 0;
+  margin: 25 0 0 0;
+}
+
+#quote-text {
+  text-align: center;
+  padding: 0 20% 0 20%;
+  text-style: italic;
+}
+
+blockquote {
+  width: 700px;
+}
