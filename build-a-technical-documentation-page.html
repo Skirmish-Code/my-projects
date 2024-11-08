@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="document-styles.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <nav id="navbar">
+    <header><h1>HTML & CSS DOCUMENTATION<h1></header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#HTML_Elements" class="nav-link">HTML Elements</a></li>
+      <li><a href="#HTML_Attributes" class="nav-link">HTML Attributes</a></li>
+      <li><a href="#CSS_Selector" class="nav-link">CSS Selector</a></li>
+      <li><a href="#CSS_Attributes" class="nav-link">CSS Attributes</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        <h2 id="intro-text">Introduction</h2>
+      </header>
+      <p id="body-text">HTML & CSS are coding languages used as the skeletal structure and skin of any working webpage. Having access to features such as specified selectors and design features for appearence and design, this language is easy to pick up for new coders.</p>
+      <p id="body-text">Some Features within this document are:</p>
+      <ul>
+        <li>HTML Elements</li>
+        <li>HTML Attributes</li>
+        <li>HTML Examples</li>
+        <li>CSS Selectors</li>
+        <li>CSS Attributes</li>
+        <li>CSS Examples</li>
+    </section>
+    <section class="main-section" id="HTML_Elements">
+      <header>
+        <h2 id="intro-text">HTML Elements</h2>
+      </header>
+      <p id="body-text">HTML elements form the backbone of web page content, defining everything from text and images to links, lists, and interactive forms. Each element represents a specific part of a web page, and together, they create a structured and organized layout. Common elements like headings, paragraphs, and divs establish the primary sections of content, while specialized elements, such as tables, forms, and images, add complexity and functionality. These elements not only give structure to a page but also make it accessible and meaningful to both users and search engines.</p>
+
+      <p id="indent">Example code:</p>
+      <pre><code>
+        &lt;p&gt;This is a paragraph of text.&lt/p&gt
+      </code></pre>
+      <p id="explaination">Explanation: The &ltp> tag defines a paragraph, which is commonly used for blocks of text.</p>
+      <pre><code>
+        &ltimg src="image.jpg" alt="A description of the image"/&gt
+        </code></pre>
+      <p id="explaination">Explanation: The &ltimg> tag is used to embed images. The src attribute specifies the image file, while alt provides alternative text for accessibility.</p>
+      <pre><code>
+      &ltul>
+        &ltli>Item 1&lt/li>
+        &ltli>Item 2&lt/li>
+        &ltli>Item 3&lt/li>
+      &ltul&gt  
+      </code></pre>
+      <p id="explaination">Explanation: The &ltul> tag creates an unordered list, and &ltli> represents each item within the list.</p>
+    </section>
+    <section class="main-section" id="HTML_Attributes">
+      <header>
+        <h2 id="intro-text">HTML Attributes</h2>
+        
+      </header>
+      <p id="body-text">HTML attributes provide additional information about elements, allowing for greater control and customization. Attributes are used within the opening tag of an element to specify details like an image’s source, a link’s destination, or a form field’s requirements. They enhance interactivity, accessibility, and presentation by customizing elements’ behavior and appearance. By leveraging attributes effectively, developers can fine-tune web content to meet specific user needs and design objectives.
+      </p>
+
+      <p id="indent">Example code:</p>
+      <pre><code>
+        &lta href="https://example.com">Visit Example&lt/a>
+      </code></pre>
+      <p id="explaination">Explanation: The href attribute specifies the URL for a link. Clicking the link will take the user to https://example.com.</p>
+      <pre><code>
+        &ltdiv id="header">This is the header section.&lt/div>
+      </code></pre>
+      <p id="explaination">Explanation: The id attribute uniquely identifies an element. It can be used for CSS styling or JavaScript targeting.</p>
+      <pre><code>
+        &ltinput type="text" placeholder="Enter your name">
+      </code></pre>
+      <p id="explaination">Explanation: The placeholder attribute displays a hint in an input field before the user types anything.</p>
+    </section>
+    <section class="main-section" id="CSS_Selector">
+      <header>
+        <h2 id="intro-text">CSS Selector</h2>
+        
+      </header>
+      <p id="body-text">CSS selectors are the tools that allow developers to target specific HTML elements to apply styles. They define which elements on a page will receive certain styling rules. Basic selectors, such as type, class, and ID selectors, target elements based on their name, assigned class, or unique ID, respectively. More complex selectors, like descendant and sibling selectors, enable targeting based on an element’s relationship to other elements. By using selectors strategically, developers can efficiently apply styles across multiple elements or target specific parts of a page for customization, creating a cohesive and visually appealing design.</p>
+
+      <p id="indent">Example code:</p>
+      <pre><code>
+    p {
+      color: blue;
+    }
+      </code></pre> 
+      <p id="explaination">Explanation: This targets all &ltp> elements and sets their text color to blue.</p>
+      <pre><code>
+    .highlight {
+      background-color: yellow;
+    }
+      </code></pre>
+      <p id="explaination">Explanation: This targets elements with the highlight class, giving them a yellow background.</p>
+      <pre><code>
+    #header {
+      font-size: 24px;
+    }
+      </code></pre>
+      <p id="explaination">Explanation: This targets the element with the id of header and increases its font size to 24 pixels.</p>
+    </section>
+    <section class="main-section" id="CSS_Attributes">
+      <header>
+        <h2 id="intro-text">CSS Attributes</h2>
+        
+      </header>
+      <p id="body-text">CSS properties (sometimes referred to as attributes) define the specific styles applied to elements targeted by selectors. Each property represents a particular aspect of an element’s appearance, such as color, font size, margin, or layout. Properties are assigned values that customize how an element looks or behaves, allowing for precise control over design and presentation. Together with selectors, CSS properties enable developers to build responsive, attractive, and user-friendly web pages by tailoring the visual experience to meet design goals and enhance usability.</p>
+
+      <p id="indent">Example code:</p>
+      <pre><code>
+    h1 {
+      color: red;
+    }
+      </code></pre>
+      <p id="explaination">Explanation: Sets the color of all &lth1> headings to red.</p>
+      <pre><code>
+    body {
+      font-family: Arial, sans-serif;
+    }        
+      </code></pre>
+      <p id="explaination">Explanation: Sets the font of the entire webpage to Arial. If Arial is unavailable, it falls back to any sans-serif font.</p>
+      <pre><code>
+    .container {
+        padding: 20px;
+    }                
+      </code></pre>
+      <p id="explaination">Explanation: Adds 20 pixels of padding around elements with the container class, creating space inside the element’s border.</p>
+    </section>
+  </main>
+  </body>
+</html>
