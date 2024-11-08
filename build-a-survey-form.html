@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" href="survey-styles.css" />
+  </head>
+  <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for your time in completing this short survey. We are looking to learn about the students in their respective courses.</p>
+  <body>
+    <div id="survey-section">
+      
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name" id="name-label">Enter your name: <input class="user-input" id="name" type="text" name="name" placeholder="John Smith" required/></label>
+          <label for="email" id="email-label">Enter your email: <input class="user-input" id="email" type="email" name="email" placeholder="john.smith@email.com" required /></label>
+          <label for="age" id="number-label">Enter your age (years):<input class="user-input" id="number" type="number" name="age" min="16" max="120" placeholder="28" required /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Area Of Study</legend>
+          <label for="dropdown">What is your area of study: 
+          <select id="dropdown" name="study">
+            <option value="">(Please select area of study)</option>
+            <option value="Engineering and Technology">Engineering and Technology</option>
+            <option value="Social Sciences">Social Sciences</option>
+            <option value="Education and Teaching">Education and Teaching</option>
+            <option value="Law and Public Policy">Law and Public Policy</option>
+            <option value="Creative Arts and Design">Creative Arts and Design</option>
+            <option value="Other">Other</option>
+          </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Current Year of Study</legend>
+          <div class="radio-group">
+          <label  for="first-year"><input class="radio-button" id="first-year" type="radio" name="study-year" value="1" checked/> 1st Year</label>
+          <label  for="second-year"><input class="radio-button" id="second-year" type="radio" name="study-year" value="2" /> 2nd Year</label>
+          <label  for="third-year"><input class="radio-button" id="third-year" type="radio" name="study-year" value="3" /> 3rd Year</label>
+          <label  for="fourth-year"><input class="radio-button" id="fourth-year" type="radio" name="study-year" value="4" /> 4th Year</label>
+          <label  for="over-four-years"><input class="radio-button" id="over-four-years" type="radio" name="study-year" value="4+"/> +4 Years</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Personal Experience</legend>
+          <label>
+            <textarea id="additional-comment" name="comment" rows="4" cols="50%" placeholder="Share your experience with your current course..." required></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Further Interests</legend>
+          <div class="check-group">
+          <label for="future-study"><input type="checkbox" name="further-interests" value="further-study"/> I am interested in pursuing further studies</label>
+          <label for="no-further-study"><input type="checkbox" name="further-interests" value="no-further"/> I am not interested in further studies.</label>
+          </div>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit"/>
+      </form>
+    </div>
+  </body>
+</html>
